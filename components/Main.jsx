@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AnimatedGameCard } from "./GameCard";
 import { Logo } from "./Logo";
 
-export default function Main() {
+export function Main() {
   const [games, setGames] = useState([]);
 
   const insets = useSafeAreaInsets();
