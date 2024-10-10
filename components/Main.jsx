@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { View, ActivityIndicator, StyleSheet, FlatList } from "react-native";
+import {
+  View,
+  ActivityIndicator,
+  StyleSheet,
+  FlatList,
+  Text,
+} from "react-native";
 import { getLatestGames } from "../lib/metacritic";
 import { AnimatedGameCard } from "./GameCard";
 
@@ -14,6 +20,11 @@ export function Main() {
 
   return (
     <ScreenLayout>
+      <View>
+        <Text className="text-white text-3xl font-bold mb-4">
+          Welcome to Expo
+        </Text>
+      </View>
       {games.length === 0 ? (
         <View style={styles.loading}>
           <ActivityIndicator size="large" color="#fff" />
